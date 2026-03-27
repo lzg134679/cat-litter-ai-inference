@@ -3,7 +3,7 @@
 ### 性能考虑
 
 - **CPU 推理**
-- **模型选择**：使用 FP32 自训练模型：cat_litter_model_fp32.onnx
+- **模型选择**：使用 FP32 自训练模型：cat_litter_model_fp32.onnx/cat_litter_model_fp32.onnx.data
 
 ## API 接口
 
@@ -71,7 +71,7 @@
 
 服务启动时会检查 Home Assistant 的 `/config/check_cat_litter_ai/` 目录：
 
-1. 如果该目录存在且包含 `cat_litter_model_fp32.onnx` 文件，则复制到容器内使用
+1. 如果该目录存在且包含 `cat_litter_model_fp32.onnx` 和 `cat_litter_model_fp32.onnx.data` 文件，则复制到容器内使用
 2. 如果目录不存在或没有模型文件，则使用容器内的默认模型
 
 6. **使用 API 接口**
