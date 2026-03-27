@@ -21,12 +21,5 @@ options:
   log_level: info
   port: 5555
 schema:
-  log_level:
-    type: string
-    default: info
-    description: "日志级别"
-  port:
-    type: integer
-    default: 5555
-    minimum: 1024
-    maximum: 65535
+  log_level: str
+  port: int
