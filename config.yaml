@@ -1,5 +1,5 @@
 name: Cat Litter AI Inference
-version: "1.0.0"
+version: "1.0.2"
 description: 猫砂盆视觉判断AI推理服务
 slug: cat_litter_ai_inference
 init: false
