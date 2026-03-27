@@ -1,4 +1,3 @@
----
 name: Cat Litter AI Inference
 version: "1.0.0"
 description: 猫砂盆视觉判断AI推理服务
