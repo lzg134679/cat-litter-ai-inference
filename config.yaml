@@ -1,5 +1,5 @@
 name: Cat Litter AI Inference
-version: "1.0.1"
+version: "1.0.0"
 description: 猫砂盆视觉判断AI推理服务
 slug: cat_litter_ai_inference
 init: false
@@ -9,9 +9,6 @@ arch:
 url: https://github.com/lzg134679/cat-litter-ai-inference
 startup: application
 boot: auto
-webui: http://[HOST]:[PORT:5555]
-panel_icon: mdi:cat
-ingress: true
 environment:
   TZ: "{{ timezone }}"
   PORT: "5555"
