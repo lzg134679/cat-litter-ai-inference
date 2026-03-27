@@ -67,5 +67,7 @@ def health():
 if __name__ == "__main__":
     print("🚀 初始化猫砂盆识别推理服务...")
     initialize_model()
-    print("🌐 启动 API 服务...")
-    app.run(host='0.0.0.0', port=5000, debug=False)
+    # 从环境变量中读取端口，默认为5555
+    port = int(os.environ.get('PORT', 5555))
+    print(f"🌐 启动 API 服务... 端口: {port}")
+    app.run(host='0.0.0.0', port=port, debug=False)

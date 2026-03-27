@@ -14,6 +14,7 @@ startup: application
 boot: auto
 environment:
   TZ: "{{ timezone }}"
+  PORT: "{{ port }}"
 ports:
   {{ port }}/tcp:
     description: API服务端口
