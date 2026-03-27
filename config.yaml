@@ -1,0 +1,39 @@
+---
+name: Cat Litter AI Inference
+version: "1.0.0"
+description: 猫砂盆视觉判断AI推理服务
+slug: cat_litter_ai_inference
+init: false
+arch:
+  - amd64
+  - armhf
+  - armv7
+  - aarch64
+url: https://github.com/lzg134679/cat-litter-ai-inference
+startup: application
+boot: auto
+environment:
+  TZ: "{{ timezone }}"
+ports:
+  {{ port }}/tcp:
+    description: API服务端口
+    required: true
+options:
+  log_level: info
+  port: 5555
+schema:
+  log_level:
+    type: string
+    default: info
+    enum:
+      - trace
+      - debug
+      - info
+      - warn
+      - error
+      - fatal
+  port:
+    type: integer
+    default: 5555
+    minimum: 1024
+    maximum: 65535
