@@ -26,13 +26,7 @@ schema:
   log_level:
     type: string
     default: info
-    enum:
-      - trace
-      - debug
-      - info
-      - warn
-      - error
-      - fatal
+    description: "日志级别"
   port:
     type: integer
     default: 5555
