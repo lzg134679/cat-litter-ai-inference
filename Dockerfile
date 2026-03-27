@@ -1,7 +1,9 @@
-FROM alpine:3.18
+FROM python:3.10-slim
 
-# 安装Python和必要的系统库
-RUN apk add --no-cache python3 py3-pip python3-dev
+# 安装必要的系统库
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    build-essential \
+    && rm -rf /var/lib/apt/lists/*
 
 # 复制项目文件
 COPY . /app
