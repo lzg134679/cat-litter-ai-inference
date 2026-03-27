@@ -16,8 +16,6 @@ addons:
     maintainer: Cat_Litter_AI_Inference
     arch:
       - amd64
-      - armhf
-      - armv7
       - aarch64
     startup: application
     boot: auto

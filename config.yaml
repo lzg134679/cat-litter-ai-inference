@@ -5,8 +5,6 @@ slug: cat_litter_ai_inference
 init: false
 arch:
   - amd64
-  - armhf
-  - armv7
   - aarch64
 url: https://github.com/lzg134679/cat-litter-ai-inference
 startup: application
