@@ -56,6 +56,18 @@
 }
 ```
 
+**响应参数含义**：
+- `probability`：该分类的置信度概率，范围0-100
+- `prediction`：是否预测为该分类，True和False
+
+**具体分类含义**：
+- `has_cat`：有猫
+- `no_cat`： 无猫
+- `just_poop`：刚拉完屎
+- `just_pee`：刚尿完尿
+- `cleaning`：自动清理猫砂
+- `no_litter`：非猫砂盆内视角
+
 ### 健康检查接口
 
 - **URL**: `/health`
@@ -155,4 +167,4 @@ actions:
     action: persistent_notification.create
 ```
 
-!\[HA通知]\(https\://github.com/lzg134679/cat-litter-ai-inference/blob/main/%E9%80%9A%E7%9F%A5%E9%A2%84%E8%A7%88.png null)
+![自动化发送的通知预览](https://i.cetsteam.com/imgs/2026/03/28/5f67ea5d42f52483.png)
