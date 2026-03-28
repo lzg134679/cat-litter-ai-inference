@@ -153,4 +153,4 @@ actions:
 ```
 
 3.手动运行后会收到HA通知：
-![HA通知](通知预览.png)
+![HA通知](https://github.com/lzg134679/cat-litter-ai-inference/blob/main/%E9%80%9A%E7%9F%A5%E9%A2%84%E8%A7%88.png)
