@@ -100,7 +100,7 @@ rest_command:
     payload: '{"image_url": "{{ image_url }}"}'
 ```
 
-2. 自动化中以简单的测试为例子，复制下面配置，以yaml方式添加自动化：
+2. 自动化中以简单的测试为例子，复制下面配置，以yaml方式添加自动化，手动运行后会收到HA通知：
 ```YAML
 alias: 猫砂盆AI识别测试
 description: ""
@@ -152,5 +152,4 @@ actions:
     action: persistent_notification.create
 ```
 
-3.手动运行后会收到HA通知：
 ![HA通知](https://github.com/lzg134679/cat-litter-ai-inference/blob/main/%E9%80%9A%E7%9F%A5%E9%A2%84%E8%A7%88.png)
