@@ -3,7 +3,8 @@
 ### 性能考虑
 
 - **CPU 推理**
-- **模型选择**：使用 FP32 自训练模型：cat\_litter\_model\_fp32.onnx/cat\_litter\_model\_fp32.onnx.data
+- **模型选择**：使用 FP32 自训练模型：cat\_litter\_model\_fp32.onnx和cat\_litter\_model\_fp32.onnx.data
+- **推理性能消耗**：内存占用约3.55MB，单张图片推理时间约3.5ms（此时间为本地直接推理算出，不包含网络传输时间，实际推理需要先下载图片到内存，因此内存占用与图片大小相关，推理时间也与图片大小和网速相关）
 
 ## API 接口
 
@@ -90,6 +91,7 @@
 ## 自动化内使用参考
 
 1. 配置HomeAssistant的`configuration.yaml`，添加以下内容：
+
 ```YAML
 rest_command:
   cat_litter_inference:
@@ -100,7 +102,8 @@ rest_command:
     payload: '{"image_url": "{{ image_url }}"}'
 ```
 
-2. 自动化中以简单的测试为例子，复制下面配置，以yaml方式添加自动化，手动运行后会收到HA通知：
+1. 自动化中以简单的测试为例子，复制下面配置，以yaml方式添加自动化，手动运行后会收到HA通知：
+
 ```YAML
 alias: 猫砂盆AI识别测试
 description: ""
@@ -152,4 +155,4 @@ actions:
     action: persistent_notification.create
 ```
 
-![HA通知](https://github.com/lzg134679/cat-litter-ai-inference/blob/main/%E9%80%9A%E7%9F%A5%E9%A2%84%E8%A7%88.png)
+!\[HA通知]\(https\://github.com/lzg134679/cat-litter-ai-inference/blob/main/%E9%80%9A%E7%9F%A5%E9%A2%84%E8%A7%88.png null)
