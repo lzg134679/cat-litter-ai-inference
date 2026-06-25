@@ -96,7 +96,7 @@ actions:
     action: persistent_notification.create
 ```
 
-![自动化发送的通知预览](https://i.cetsteam.com/imgs/2026/03/28/5f67ea5d42f52483.png)
+![自动化发送的通知预览](https://s3.bmp.ovh/2026/06/25/sjFYfvaB.png)
 
 （可选）由于总是需要保存摄像头快照，会导致图片越来越多，因此可以在 Home Assistant 的`configuration.yaml`中添加以下内容：
 
